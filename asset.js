@@ -690,13 +690,25 @@ function bar1(data) { // create bar chart
 
   //Axis text formatting
   var labels = chart.xAxis().labels();
-  labels.fontSize(22);
+  if (window.innerWidth < 550) {
+    labels.fontSize(12);
+  }
+  else{
+    labels.fontSize(20);
+  
+  }
   labels.fontFamily("poppins");
   labels.fontWeight(500);
   labels.useHtml(false);
 
   var labels = chart.yAxis().labels();
-  labels.fontSize(20);
+  if (window.innerWidth < 550) {
+    labels.fontSize(12);
+  }
+  else{
+    labels.fontSize(20);
+  
+  }
   labels.fontFamily("poppins")
   labels.fontWeight(500);
   labels.useHtml(false);
@@ -758,12 +770,26 @@ function bar2(data) {
   title.fontSize(23);
 
   var labels = chart.xAxis().labels();
-  labels.fontSize(22);
+  if (window.innerWidth < 550) {
+    labels.fontSize(12);
+  }
+  else{
+    labels.fontSize(20);
+  
+  }
   labels.fontFamily("poppins");
   labels.fontWeight(500);
   labels.useHtml(false);
+
+
   var labels = chart.yAxis().labels();
-  labels.fontSize(20);
+  if (window.innerWidth < 550) {
+    labels.fontSize(12);
+  }
+  else{
+    labels.fontSize(20);
+  
+  }
   labels.fontFamily("poppins")
   labels.fontWeight(500);
   labels.useHtml(false);
@@ -998,10 +1024,4 @@ calculateMortgage();
 })
 
 
-// const button = document.getElementById('arrow-amort');
-// const select = document.querySelector('#selectamort');
-
-
-// button.addEventListener('click', function() {
-//   $('#selectamort').show();
-// });
+// 
