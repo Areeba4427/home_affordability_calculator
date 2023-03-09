@@ -672,7 +672,7 @@ function bar1(data) { // create bar chart
   // set scale minimum
   chart.yScale().minimum(0);
   chart.barGroupsPadding(0.2);
-  chart.labels().fontSize(45);
+  chart.labels().fontSize(30);
   chart.labels().fontWeight(900);
 
   let palette = anychart.palettes.distinctColors();
@@ -694,7 +694,7 @@ function bar1(data) { // create bar chart
     labels.fontSize(12);
   }
   else{
-    labels.fontSize(20);
+    labels.fontSize(16);
   
   }
   labels.fontFamily("poppins");
@@ -706,7 +706,7 @@ function bar1(data) { // create bar chart
     labels.fontSize(12);
   }
   else{
-    labels.fontSize(20);
+    labels.fontSize(16);
   
   }
   labels.fontFamily("poppins")
@@ -754,7 +754,7 @@ function bar2(data) {
   // set scale minimum
   chart.yScale().minimum(0);
   chart.barGroupsPadding(0.2);
-  chart.labels().fontSize(45);
+  chart.labels().fontSize(30);
   chart.labels().fontWeight(900);
 
   let palette = anychart.palettes.distinctColors();
@@ -774,7 +774,7 @@ function bar2(data) {
     labels.fontSize(12);
   }
   else{
-    labels.fontSize(20);
+    labels.fontSize(16);
   
   }
   labels.fontFamily("poppins");
@@ -787,7 +787,7 @@ function bar2(data) {
     labels.fontSize(12);
   }
   else{
-    labels.fontSize(20);
+    labels.fontSize(16);
   
   }
   labels.fontFamily("poppins")
