@@ -1744,7 +1744,7 @@ input {
     flex-direction: column;
     width: 60vw;
     height: 800px;
-    padding-left: 20px;
+    /* padding-left: 20px; */
 }
 
 .outer-column {
@@ -1987,7 +1987,7 @@ input {
 
     .inner-inline {
         padding: 20px 0px !important;
-        width: 80vw;
+        
     }
 }
 
@@ -2111,10 +2111,7 @@ input {
         padding: 0px 0px !important;
     }
 
-    #chart-1,
-    #chart-2 {
-        width: 70vw
-    }
+    
 }
 
 @media screen and (max-width: 1055px) {
@@ -2307,6 +2304,7 @@ input {
 /* 557x1170 */
 @media screen and (max-width:560px) {
 
+    
     .row1 {
         max-width: 400px !important;
         min-height: 2500px !important;
@@ -2352,8 +2350,7 @@ input {
     }
 
  
-
-    .sep {
+ .sep {
         display: none !important;
     }
 
@@ -2429,6 +2426,11 @@ input {
     .ar1 {
         margin-right: 30px !important;
     }
+    
+    #chart-1, #chart-2 {
+        width: 68vw;
+        margin-left: -50px !important;
+    }
 }
 
 /* 375x812  414x736  375x667  320x568 */
@@ -2462,8 +2464,8 @@ input {
 
     #chart-1,
     #chart-2 {
-       
-        margin-left: 10px !important;
+       width:250px !important;
+        margin-left: 23px !important;
     }
 
     .headline {
@@ -2537,6 +2539,10 @@ input {
      .tabs-head a {
         margin-top: 10px !important;
         font-size: 14px !important;
+    }
+    #chart-1, #chart-2 {
+        /* width: 70vw !important; */
+        width:200px !important;
     }
 }
 

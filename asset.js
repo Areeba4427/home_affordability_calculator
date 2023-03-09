@@ -671,7 +671,7 @@ function bar1(data) { // create bar chart
   // chart.tooltip().positionMode('point');
   // set scale minimum
   chart.yScale().minimum(0);
-  chart.barGroupsPadding(0.2);
+  chart.barGroupsPadding(0.1);
   chart.labels().fontSize(30);
   chart.labels().fontWeight(900);
 
@@ -729,7 +729,7 @@ function bar2(data) {
 
   chart.animation(true);
 
-  chart.padding([10, 40, 15, 20]);
+  // chart.padding([10, 10, 11, 10]);
 
 
   // create bar series with passed data
@@ -753,7 +753,7 @@ function bar2(data) {
 
   // set scale minimum
   chart.yScale().minimum(0);
-  chart.barGroupsPadding(0.2);
+  chart.barGroupsPadding(0.1);
   chart.labels().fontSize(30);
   chart.labels().fontWeight(900);
 
