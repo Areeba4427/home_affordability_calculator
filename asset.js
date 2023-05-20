@@ -374,8 +374,8 @@ function calculateMortgage() {
 
 
   bar1([
-    ['With Arch ', Maximum_purchase_price.toFixed(0)],
-    ['Without Arch ', Maximum_purchase_price_w.toFixed(0)]
+    ['With Simply Approved ', Maximum_purchase_price.toFixed(0)],
+    ['Without Simply Approved ', Maximum_purchase_price_w.toFixed(0)]
   ]);
 
 
@@ -448,8 +448,8 @@ function calculateMortgage() {
   ]);
 
   bar2([
-    ['Without Arch ', Monthly_payment_w_graph_new.toFixed(0)],
-    ['With Arch ', Monthly_payment.toFixed(0)]
+    ['Without Simply Approved ', Monthly_payment_w_graph_new.toFixed(0)],
+    ['With Simply Approved ', Monthly_payment.toFixed(0)]
   ]);
 
   document.getElementById("comparison-1").textContent = parseFloat(((Maximum_purchase_price - Maximum_purchase_price_w) / Maximum_purchase_price_w) * 100).toFixed(0) + "%";
@@ -671,7 +671,7 @@ function bar1(data) { // create bar chart
   // chart.tooltip().positionMode('point');
   // set scale minimum
   chart.yScale().minimum(0);
-  chart.barGroupsPadding(0.1);
+  chart.barGroupsPadding(0.3);
   chart.labels().fontSize(30);
   chart.labels().fontWeight(900);
 
@@ -691,10 +691,14 @@ function bar1(data) { // create bar chart
   //Axis text formatting
   var labels = chart.xAxis().labels();
   if (window.innerWidth < 550) {
-    labels.fontSize(12);
+    labels.fontSize(10);
+    chart.tooltip().title().fontSize(18);
+    title.fontSize(16);
   }
   else{
-    labels.fontSize(16);
+    labels.fontSize(12);
+    chart.tooltip().title().fontSize(20);
+    title.fontSize(20);
   
   }
   labels.fontFamily("poppins");
@@ -703,10 +707,11 @@ function bar1(data) { // create bar chart
 
   var labels = chart.yAxis().labels();
   if (window.innerWidth < 550) {
-    labels.fontSize(12);
+    labels.fontSize(10);
+    
   }
   else{
-    labels.fontSize(16);
+    labels.fontSize(12);
   
   }
   labels.fontFamily("poppins")
@@ -718,6 +723,7 @@ function bar1(data) { // create bar chart
   chart.container('chart-1');
   // initiate chart drawing
   chart.draw();
+
 }
 
 
@@ -753,7 +759,7 @@ function bar2(data) {
 
   // set scale minimum
   chart.yScale().minimum(0);
-  chart.barGroupsPadding(0.1);
+  chart.barGroupsPadding(0.3);
   chart.labels().fontSize(30);
   chart.labels().fontWeight(900);
 
@@ -771,11 +777,14 @@ function bar2(data) {
 
   var labels = chart.xAxis().labels();
   if (window.innerWidth < 550) {
-    labels.fontSize(12);
+    labels.fontSize(10);
+    chart.tooltip().title().fontSize(18);
+    title.fontSize(16);
   }
   else{
-    labels.fontSize(16);
-  
+    labels.fontSize(12);
+    chart.tooltip().title().fontSize(20);
+    title.fontSize(20);
   }
   labels.fontFamily("poppins");
   labels.fontWeight(500);
@@ -784,10 +793,11 @@ function bar2(data) {
 
   var labels = chart.yAxis().labels();
   if (window.innerWidth < 550) {
-    labels.fontSize(12);
+    labels.fontSize(10);
+   
   }
   else{
-    labels.fontSize(16);
+    labels.fontSize(12);
   
   }
   labels.fontFamily("poppins")
@@ -798,6 +808,7 @@ function bar2(data) {
   chart.container('chart-2');
   // initiate chart drawing
   chart.draw();
+
 }
 
 
@@ -805,19 +816,19 @@ function bar2(data) {
 anychart.onDocumentReady(function () {
   chart([
     ["You", 35000],
-    ["ARCH", 119420],
+    ["Simply Approved", 119420],
     ["Mortgage", 442678],
   ]);
 
   bar1([
-    ['With Arch', 597098],
-    ['Without Arch', 477678],
+    ['With Simply Approved', 597098],
+    ['Without Simply Approved', 477678],
 
   ]);
 
   bar2([
-    ['Without Arch', 2095],
-    ['With Arch', 2767]
+    ['Without Simply Approved', 2095],
+    ['With Simply Approved', 2767]
 
   ]);
 });
@@ -1023,5 +1034,7 @@ calculateMortgage();
   })
 })
 
+
+// 
 
 // 

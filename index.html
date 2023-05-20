@@ -5,14 +5,15 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width">
    <title>Home Affordability</title>
-   <meta
-   name="viewport"
-   content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
- />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
    <script src="https://mintrates.com/wp-content/themes/mintrates/bower_components/modernizr/modernizr.js"></script>
    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+   <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-bundle.min.js"></script>
+   <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js"></script>
+   
    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-core.min.js"></script>
-   <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-pie.min.js"></script>
+
+
    <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
    <script src="https://cdn.anychart.com/releases/v8/js/anychart-ui.min.js"></script>
    <script src="https://cdn.anychart.com/releases/v8/js/anychart-exports.min.js"></script>
@@ -35,9 +36,8 @@
       <main>
          <div class="main-header">
             <div class="head-div">
-               <h1 class="head-1">Calculate your <span>Total Home Affordability<br></span> using Simply Approved Foundations</h1>
-               <p class="head-2">Easily calculate your total home affordability, including the impact of your buying
-                  power,and your estimated monthly savings when using the Simply Approved down payment program.</p>
+               <h1 class="head-1">Calculate your <span>Total Home Affordability<br></span> using Simply Approved</h1>
+               <p class="head-2">Easily calculate your total home affordability, including the impact of your buying power, and your estimated monthly savings, when using the Simply Approved down payment program.</p>
             </div>
          </div>
 
@@ -61,7 +61,7 @@
                            <input type="text" id="home-price" value="$100,000" onkeypress='return neww(event)'>
                            <div class="arrows">
                               <button class="up-arrow" id="arrow-up1">▲</button>
-                           <button class="down-arrow" id="arrow-down1">▼</button>
+                              <button class="down-arrow" id="arrow-down1">▼</button>
                            </div>
                         </div>
                      </div>
@@ -79,12 +79,12 @@
                         </div>
                         <div class="small-12 columns input-wrap">
                            <input type="text" id="down-price" value="$35,000" onkeypress='return neww(event)'>
-                           
+
                            <div class="arrows">
                               <button class="up-arrow" id="arrow-up2">▲</button>
-                           <button class="down-arrow" id="arrow-down2">▼</button>
+                              <button class="down-arrow" id="arrow-down2">▼</button>
                            </div>
-                          </div>
+                        </div>
                         <span class="ratio r1" id="r1">5.86%</span>
                      </div>
                      <div class="row row-section">
@@ -103,7 +103,7 @@
                            <input type="text" id="arch-price" value="$119,420" onkeypress='return neww(event)'>
                            <div class="arrows">
                               <button class="up-arrow" id="arrow-up3">▲</button>
-                           <button class="down-arrow" id="arrow-down3">▼</button>
+                              <button class="down-arrow" id="arrow-down3">▼</button>
                            </div>
                         </div>
                         <span class="ratio r2" id="r2">20.00%</span>
@@ -113,11 +113,11 @@
                            <label class="inline">Interest %
                               <input id="mortage-interest" type="text" placeholder="" value="3.00%"
                                  onkeypress='return neww(event)' />
-                                 <div class="arrows ar1">
-                                    <button class="up-arrow" id="arrow-up4">▲</button>
+                              <div class="arrows ar1">
+                                 <button class="up-arrow" id="arrow-up4">▲</button>
                                  <button class="down-arrow" id="arrow-down4">▼</button>
-                                 </div>
-                              </label>
+                              </div>
+                           </label>
                         </div>
                         <div class="small-2 columns">
                            &nbsp
@@ -133,14 +133,14 @@
                                  <option value="25" selected>25</option>
                                  <option value="30">30</option>
                               </select>
-                             
+
                            </label>
                            <div class="arrows">
-                                 
+
                               <span class="arroww" id="arrow-amort">▼</span>
-                              </div>
+                           </div>
                         </div>
-                  
+
                      </div>
                      <div class="row row-section">
                         <div class="small-12 columns">
@@ -150,7 +150,7 @@
                            <input type="text" id="monthly-payments" onkeypress='return neww(event)' value="$0">
                            <div class="arrows">
                               <button class="up-arrow" id="arrow-up5">▲</button>
-                           <button class="down-arrow" id="arrow-down5">▼</button>
+                              <button class="down-arrow" id="arrow-down5">▼</button>
                            </div>
                         </div>
                      </div>
@@ -162,7 +162,7 @@
                            <input type="text" id="mortage-debt" onkeypress='return neww(event)' value="$0">
                            <div class="arrows">
                               <button class="up-arrow" id="arrow-up6">▲</button>
-                           <button class="down-arrow" id="arrow-down6">▼</button>
+                              <button class="down-arrow" id="arrow-down6">▼</button>
                            </div>
                         </div>
                      </div>
@@ -197,7 +197,7 @@
                                  <li class="legend2">
                                     <span class="cost-2 property-tax" style="font-size: 35px;"
                                        id="arch-legend">$119,420</span><span class="text-2"
-                                       style="font-size: 24px;">ARCH</span>
+                                       style="font-size: 24px;">Simply Approved</span>
                                  </li>
                                  <li class="legend3">
                                     <span class="cost-3 home-insurance" style="font-size: 35px;"
@@ -222,7 +222,7 @@
                      </div>
                   </div>
                   <!-- //third section -->
-                  <div class="medium-5 small-12 columns left-calc second-section tabcontent" id="payment-comparison">
+                  <div class="medium-55 small-12 columns left-calc second-section tabcontent" id="payment-comparison">
                      <h2 class="payment-heading comparison">Payment Comparison</h2>
 
                      <div class="parent">
@@ -257,8 +257,24 @@
 
                   </div>
                </section>
+             
+            </div>
+            <div class="aux-modern-heading-description">
+               <p>
+                  <em>
+                     *The lending scenario provided here is intended to serve as a guide only, 
+                     providing you with information regarding your maximum home affordability.
+                      It does not constitute an offer from Simply Approved or any of its partners 
+                      for financing and may not be indicative of the final terms provided to you by your lender.
+                       The amounts listed are based solely on the information provided by you to Simply Approved
+                        as well as certain assumptions related to your lending eligibility (i.e., property tax, heating costs, etc.).
+                         Please note that the figures above do not include any closing costs, which will need to be paid 
+                      at the end of the buying process.
+                  </em>
+               </p>
             </div>
       </main>
+      
       <footer>
    </div>
    <script src="https://mintrates.com/wp-content/themes/mintrates/js/vendor/jquery.js"></script>
@@ -268,8 +284,7 @@
    <script src="https://mintrates.com/wp-content/themes/mintrates/js/app.js"></script>
    <script src="https://mintrates.com/wp-content/themes/mintrates/js/numeral.min.js"></script>
    <script src="https://mintrates.com/wp-content/themes/mintrates/js/chart.js"></script>
-   <!-- <script src="https://mintrates.com/wp-content/themes/mintrates/js/main.js"></script> -->
-   <script id="dsq-count-scr" src="//mintrates.disqus.com/count.js" async></script>
+  <script id="dsq-count-scr" src="//mintrates.disqus.com/count.js" async></script>
    </div>
    </div>
    <!--  END FOOTER  -->
